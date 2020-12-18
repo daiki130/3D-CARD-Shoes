@@ -57,3 +57,11 @@ body {
   color: #585858;
   font-weight: lighter;
 }
+.sizes {
+  display: flex;
+  justify-content: space-between;
+}
+.sizes button{
+  padding: 0.5rem 2rem;
+  background: none;
+}

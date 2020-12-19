@@ -76,6 +76,7 @@ body {
   cursor: pointer;
   font-weight: bold;
   color: #585858;
+  outline: none;
 }
 button.active {
   background-color: #585858;

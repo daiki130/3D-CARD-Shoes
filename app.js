@@ -7,6 +7,7 @@ const sneaker = document.querySelector(".sneaker Img");
 const purchase = document.querySelector(".purchase button");
 const description = document.querySelector(".info h3");
 const sizes = document.querySelector(".sizes");
+const sizesButtons = sizes.querySelectorAll("button");
 
 // Moving Animation Event
 container.addEventListener("mousemove", (e) => {
@@ -35,3 +36,13 @@ container.addEventListener("mouseleave", (e) => {
   sizes.style.transform = "translateZ(0px)";
   purchase.style.transform = "translateZ(0px)";
 });
+
+sizesButtons.forEach((sizesButton, i) => {
+  sizesButton.addEventListener("click", () => {
+    if (sizesButton.className === "active") {
+      sizesButton.classList.remove("active");
+    } else {
+      sizesButton.classList.add("active");
+    }
+  });
+})

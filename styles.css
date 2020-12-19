@@ -84,7 +84,6 @@ button.active {
 }
 .purchase {
   margin-top: 3.5rem;
-  transition: all 0.75s ease-out;
 }
 .purchase button {
   width: 100%;
@@ -95,4 +94,37 @@ button.active {
   cursor: pointer;
   border-radius: 30px;
   font-weight: bolder;
+  transition: all 0.75s ease-out;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: 85%;
+  }
+  .card {
+    padding: 0rem 1.5rem;
+    min-height: 55vh;
+  }
+  .circle {
+    width: 10rem;
+    height: 10rem;
+  }
+  .sneaker {
+    min-height: 20vh;
+  }
+  .sneaker img{
+    width: 15rem;
+  }
+  .info h1 {
+    font-size: 1.5rem;
+  }
+  .info h3 {
+    font-size: 0.7rem;
+  }
+  .sizes button {
+    padding: 0.4rem 1.3rem;
+  }
+  .purchase {
+    margin-top: 2.5rem;
+  }
 }

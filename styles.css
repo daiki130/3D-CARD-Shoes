@@ -13,7 +13,8 @@ body {
   perspective: 1000px;
 }
 .container {
-  width: 40%;
+  /* width: 40%; */
+  width: 31.9rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,16 +22,17 @@ body {
 .card {
   transform-style: preserve-3d;
   min-height: 80vh;
-  width: 35rem;
+  width: 31rem;
   border-radius: 30px;
-  padding: 0rem 5rem;
+  padding: 3rem 5rem 4rem;
   box-shadow: 0 20px 20px rgba(0,0,0,0.2), 0px 0px 50px rgba(0,0,0,0.2);
 }
 .sneaker {
-  min-height: 35vh;
+  min-height: 25vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 3rem;
 }
 .sneaker img {
   width: 20rem;
@@ -97,6 +99,43 @@ button.active {
   transition: all 0.75s ease-out;
 }
 
+@media screen and (max-width: 590px) {
+  .card {
+    width: 20rem;
+  }
+  .info h1 {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    right: 2rem;
+  }
+  .sizes {
+    position: absolute;
+    bottom: 8.5rem;
+    left: 1.5rem;
+    right: 1.5rem;
+  }
+  .sneaker {
+    position: absolute;
+    top: 10rem;
+    left: 2rem;
+    right: 2rem;
+  }
+  .sizes button {
+    padding: 1rem 1rem;
+  }
+  .purchase button {
+    position: absolute;
+    bottom: 2rem;
+    width: 90%;
+    left: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  /* .card {
+    width: 26rem;
+  } */
+}
 @media screen and (max-width: 375px) {
   .container {
     width: 85%;
@@ -126,5 +165,28 @@ button.active {
   }
   .purchase {
     margin-top: 2.5rem;
+  }
+}
+@media screen and (max-height: 790px) {
+  .circle {
+    width: 12rem;
+    height: 12rem;
+  }
+  .sneaker img {
+    width: 17rem;
+  }
+}
+@media screen and (max-height: 765px) {
+  .sizes {
+    margin-top: 2rem;
+  }
+  .info h3 {
+    display: none;
+  }
+}
+@media screen and (max-height: 660px) {
+  .circle {
+    width: 10rem;
+    height: 10rem;
   }
 }

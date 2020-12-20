@@ -102,12 +102,16 @@ button.active {
 @media screen and (max-width: 590px) {
   .card {
     width: 20rem;
+    min-height: 39rem;
   }
   .info h1 {
     position: absolute;
     top: 2rem;
     left: 2rem;
     right: 2rem;
+  }
+  .info h3 {
+    display: none;
   }
   .sizes {
     position: absolute;
@@ -126,15 +130,10 @@ button.active {
   }
   .purchase button {
     position: absolute;
-    bottom: 2rem;
+    bottom: 3rem;
     width: 90%;
     left: 1rem;
   }
-}
-@media screen and (max-width: 500px) {
-  /* .card {
-    width: 26rem;
-  } */
 }
 @media screen and (max-width: 375px) {
   .container {
@@ -150,15 +149,25 @@ button.active {
   }
   .sneaker {
     min-height: 20vh;
+    left: 1rem;
+    width: 50%;
+    top: 9rem;
   }
   .sneaker img{
-    width: 15rem;
+    width: 13rem;
+  }
+  .sizes {
+    flex-direction: column;
+    width: 25%;
+    top: 9.5rem;
+    left: 13.5rem;
+    height: 10rem;
   }
   .info h1 {
     font-size: 1.5rem;
   }
   .info h3 {
-    font-size: 0.7rem;
+    display: none;
   }
   .sizes button {
     padding: 0.4rem 1.3rem;

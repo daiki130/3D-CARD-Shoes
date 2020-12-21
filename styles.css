@@ -104,6 +104,12 @@ button.active {
     width: 20rem;
     min-height: 39rem;
   }
+  .sneaker {
+    position: absolute;
+    top: 10rem;
+    left: 2rem;
+    right: 2rem;
+  }
   .info h1 {
     position: absolute;
     top: 2rem;
@@ -118,12 +124,6 @@ button.active {
     bottom: 8.5rem;
     left: 1.5rem;
     right: 1.5rem;
-  }
-  .sneaker {
-    position: absolute;
-    top: 10rem;
-    left: 2rem;
-    right: 2rem;
   }
   .sizes button {
     padding: 1rem 1rem;
@@ -143,18 +143,24 @@ button.active {
     padding: 0rem 1.5rem;
     min-height: 55vh;
   }
-  .circle {
-    width: 10rem;
-    height: 10rem;
-  }
   .sneaker {
     min-height: 20vh;
     left: 1rem;
     width: 50%;
     top: 9rem;
   }
+  .circle {
+    width: 10rem;
+    height: 10rem;
+  }
   .sneaker img{
     width: 13rem;
+  }
+  .info h1 {
+    font-size: 1.5rem;
+  }
+  .info h3 {
+    display: none;
   }
   .sizes {
     flex-direction: column;
@@ -162,12 +168,6 @@ button.active {
     top: 9.5rem;
     left: 13.5rem;
     height: 10rem;
-  }
-  .info h1 {
-    font-size: 1.5rem;
-  }
-  .info h3 {
-    display: none;
   }
   .sizes button {
     padding: 0.4rem 1.3rem;
